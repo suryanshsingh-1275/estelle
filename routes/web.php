@@ -44,9 +44,7 @@ Route::post('/api/cart/remove/{cart}', [CartController::class, 'remove'])
 
 
 /*
-|--------------------------------------------------------------------------
-| Cart
-|--------------------------------------------------------------------------
+Cart
 */
 
 Route::get('/cart', [CartController::class, 'index'])
@@ -59,3 +57,4 @@ Admin
 
 Route::get('/admin', [AdminController::class, 'dashboard'])
     ->name('admin.dashboard');
+    
