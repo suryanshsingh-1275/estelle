@@ -7,7 +7,10 @@ return [
             'name' => 'Necklace Sets',
             'image' => 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=500&q=80',
         ],
-        
+        [
+            'name' => 'Pendant Sets',
+            'image' => 'https://images.unsplash.com/     photo-1599643478518-a784e5dc4c8f?auto=format&  fit=crop&w=800&q=80',
+        ],
         [
             'name' => 'Earrings',
             'image' => 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=500&q=80',
