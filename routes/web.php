@@ -8,9 +8,7 @@ use App\Http\Controllers\CustomerController;
 
 
 /*
-|--------------------------------------------------------------------------
-| Customer
-|--------------------------------------------------------------------------
+Customer
 */
 
 Route::get('/', [CustomerController::class, 'home'])
