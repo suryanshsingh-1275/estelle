@@ -229,3 +229,336 @@ input {
 }
 
 
+/* ==============================
+   SECTIONS
+============================== */
+
+.section {
+    padding: 60px 6%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-heading span {
+    font-size: 13px;
+    color: #806a72;
+    letter-spacing: 1px;
+}
+
+.section-heading h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.section-heading h2::after {
+    content: '';
+    display: block;
+    width: 38px;
+    height: 1px;
+    background: var(--pink);
+    margin: 12px auto;
+}
+
+
+/* ==============================
+   CATEGORIES
+============================== */
+
+.category-section {
+    background: #fafafa;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 14px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.category-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.category-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.category-card span {
+    display: block;
+    padding: 13px 5px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+/* ==============================
+   COLLECTION
+============================== */
+
+.collection-banner {
+    min-height: 430px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(232, 167, 174, .95),
+            rgba(232, 167, 174, .25)
+        ),
+        url('https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1800&q=85')
+        center / cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 5%;
+}
+
+.collection-content {
+    text-align: center;
+    max-width: 600px;
+}
+
+.collection-content span {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.collection-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(55px, 7vw, 100px);
+    font-weight: 400;
+    line-height: 1;
+    margin: 15px 0;
+}
+
+.collection-content p {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.collection-content a {
+    display: inline-block;
+    padding: 13px 25px;
+    background: #fff;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+/* ==============================
+   PRODUCTS
+============================== */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.product-card {
+    min-width: 0;
+}
+
+.product-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 9px;
+    background: #f6f3f4;
+}
+
+.product-image img {
+    width: 100%;
+    aspect-ratio: .82;
+    display: block;
+    object-fit: cover;
+    transition: transform .4s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.04);
+}
+
+.wishlist {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 0;
+    background: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.discount {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: var(--pink);
+    color: white;
+    padding: 5px 8px;
+    font-size: 9px;
+}
+
+.product-info {
+    padding-top: 12px;
+}
+
+.product-info h3 {
+    font-size: 12px;
+    font-weight: 500;
+    min-height: 32px;
+}
+
+.price-row {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    margin: 7px 0 12px;
+    font-size: 12px;
+}
+
+.old-price {
+    color: #888;
+    text-decoration: line-through;
+}
+
+.price-row strong {
+    font-weight: 600;
+}
+
+.add-cart {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--pink);
+    background: white;
+    color: var(--pink);
+    font-size: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.add-cart:hover {
+    background: var(--pink);
+    color: white;
+}
+
+
+/* ==============================
+   BUDGET
+============================== */
+
+.budget-section {
+    margin: 20px 7%;
+    padding: 28px;
+    border-radius: 18px;
+    background: #fff0f4;
+
+    display: grid;
+    grid-template-columns: 1.4fr repeat(4, 1fr);
+    gap: 25px;
+    align-items: center;
+}
+
+.budget-intro {
+    font-size: 27px;
+    line-height: 1.25;
+}
+
+.budget-intro span,
+.budget-intro strong {
+    display: block;
+}
+
+.budget-card {
+    min-height: 170px;
+    border: 4px solid #f3a2bc;
+    border-radius: 35px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.budget-card span {
+    color: #666;
+}
+
+.budget-card strong {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+
+.budget-card i {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: #f3a2bc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+}
+
+.budget-card.premium {
+    background:
+        linear-gradient(
+            rgba(25, 5, 40, .2),
+            rgba(25, 5, 40, .2)
+        ),
+        url('https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=500&q=80')
+        center / cover;
+
+    color: white;
+    border: 0;
+}
+
+
+/* ==============================
+   TRUST
+============================== */
+
+.trust-section {
+    background: #fff8fa;
+    padding: 55px 7%;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 25px;
+    text-align: center;
+}
+
+.trust-section div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.trust-section strong {
+    font-size: 11px;
+    color: var(--pink);
+}
+
+.trust-section span {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+}
+
+
